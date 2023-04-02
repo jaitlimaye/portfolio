@@ -4,13 +4,13 @@ import { Link } from 'gatsby'
 
 const NavbarComp = () => {
   return (
-    <div> <Navbar bg="dark" variant="dark">
+    <div> <Navbar bg="primary" variant="light">
     <Container>
       <Navbar.Brand as={Link} to="/">Jait Limaye</Navbar.Brand>
       <Nav className="ms-auto">
-      <Nav.Link as={Link} to="/about">About</Nav.Link>
-        <Nav.Link as={Link} to="/projects">Projects</Nav.Link>
-        <Nav.Link as={Link} to="/resume">Resume</Nav.Link>
+        <Nav.Link as={Link} to="/skills"><div class="navlinks">Skills</div></Nav.Link>
+        <Nav.Link as={Link} to="/projects"><div class="navlinks">Projects</div></Nav.Link>
+        <Nav.Link as={Link} to="/resume"><div class="navlinks">Resume</div></Nav.Link>
       </Nav>
     </Container>
   </Navbar>
