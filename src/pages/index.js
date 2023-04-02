@@ -14,7 +14,8 @@ const IndexPage = () => (
       <div>
         <Row>
           <Col>
-            MY NAME
+            Hi I am,
+            
           </Col>
           <Col>
             MY PIC
