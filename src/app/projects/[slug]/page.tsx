@@ -18,8 +18,6 @@ export default async function ProjectPage({
       <Navbar />
 
       <main className="mx-auto max-w-5xl px-6 pb-16">
-        {/* HERO */}
-
         <section className="relative py-16">
           <div className="absolute inset-0 -z-10 overflow-hidden">
             <div className="absolute top-[-80px] left-[150px] h-[350px] w-[350px] rounded-full bg-sky-500/20 blur-[120px]" />
@@ -72,13 +70,9 @@ export default async function ProjectPage({
           </div>
         </section>
 
-        {/* GALLERY */}
-
         <section className="mb-16">
           <ProjectGallery images={project.images} />
         </section>
-
-        {/* MAIN CONTENT */}
 
         <section className="space-y-10">
           <div>

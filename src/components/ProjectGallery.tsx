@@ -8,8 +8,6 @@ export default function ProjectGallery({ images }: { images: string[] }) {
 
   return (
     <div className="w-full">
-      {/* Main Image */}
-
       <div className="relative mb-6 aspect-[16/9] w-full overflow-hidden rounded-xl border border-slate-800 bg-slate-900 shadow-lg">
         <Image
           src={`/images${selected}`}
@@ -18,8 +16,6 @@ export default function ProjectGallery({ images }: { images: string[] }) {
           className="object-contain transition duration-500"
         />
       </div>
-
-      {/* Thumbnails */}
 
       <div className="flex gap-3 overflow-x-auto pb-2">
         {images.map((img, i) => {
