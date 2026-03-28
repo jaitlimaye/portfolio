@@ -31,14 +31,16 @@ export default function Home() {
                   href="#projects"
                   className="rounded-lg bg-sky-500 px-6 py-3 font-medium text-black transition hover:bg-sky-400"
                 >
+                  
                   View Work
                 </a>
 
                 <a
-                  href="#contact"
-                  className="rounded-lg border border-gray-700 px-6 py-3 transition hover:border-gray-500"
+                  href="https://github.com/jaitlimaye"
+                  className="rounded-lg border flex flex-row items-center gap-2 border-gray-700 px-6 py-3 transition hover:border-gray-500"
                 >
-                  Contact
+                  <Github size={20} />
+                GitHub
                 </a>
               </div>
             </div>
@@ -67,36 +69,6 @@ export default function Home() {
             {projects.slice(2).map((project, i) => (
               <ProjectCard key={`${project.slug}_${i}`} project={project} />
             ))}
-          </div>
-        </section>
-
-        <section id="contact" className="pb-32">
-          <h2 className="mb-10 text-3xl font-bold">Contact</h2>
-
-          <div className="flex gap-6">
-            <a
-              href="https://github.com/jaitlimaye"
-              className="flex items-center gap-2 rounded-lg border border-slate-800 px-5 py-3 transition hover:border-sky-400"
-            >
-              <Github size={20} />
-              GitHub
-            </a>
-
-            <a
-              href="mailto:jaitlimaye@gmail.com"
-              className="flex items-center gap-2 rounded-lg border border-slate-800 px-5 py-3 transition hover:border-sky-400"
-            >
-              <Mail size={20} />
-              Email
-            </a>
-
-            <a
-              href="https://linkedin.com/in/jaitlimaye"
-              className="flex items-center gap-2 rounded-lg border border-slate-800 px-5 py-3 transition hover:border-sky-400"
-            >
-              <Linkedin size={20} />
-              LinkedIn
-            </a>
           </div>
         </section>
       </main>
